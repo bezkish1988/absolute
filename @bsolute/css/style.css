@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+	background-color: #FFFFFF;
+	font-family: "Lato";
+	font-weight: 300;
+	font-size: 16px;
+	color: #303030;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+
+	/*margin-top: 70px;
+*/}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato";
+	font-weight: 300;
+	color: #303030;
+}
+
+  .affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+.head {
+	margin-top: 72px;
+
+}
+
+/*  .head a {
+	font-size: 	56px;
+	margin-top: -40px;
+	text-align: right;
+	font-style: italic;	
+} */
+/*
+.head a span{
+	font-size: 	22px;
+	margin-top: -40px;
+	font-style: normal;
+	position: relative;
+	padding-bottom: 20px;
+	position: relative;
+	margin-right: 20px;
+
+} */
+
+ .head img {
+	position: relative;
+	width: 250px;
+	height: auto;
+	margin-top: -60px;
+}
+
+/*Form search*/
+
+.seach-block {
+	margin: -30px 0px 45px 0px;
+	max-width:370px;
+	;
+}
+
+form.seach-btn input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    height: 35px;
+    
+}
+
+form.seach-btn button {
+    float: left;
+    width: 20%;
+    height: 35px;
+    padding: 6px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.seach-btn button:hover {
+    background: #0b7dda;
+}
+
+form.seach-btn::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* .seach-block {
+	margin: -30px 0px 45px 0px;
+} */
+
+/* .fa-search:before {
+    margin-bottom: 15px !important;
+    position: 	relative;
+}
+ */
+/*Menu Navbar*/
+
+
+@media screen and (min-width: 768px) {
+  .nav-center {
+    position: absolute;
+    left: 120px;
+    right: 120px;
+    top: 0;
+    height: 50px;
+    text-align: center;
+  }
+ .nav-center .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+}
+
+
+.navbar-default {
+    background-color: #F4F5F7 !important;
+    border-color: #FFFFFF !important;
+/*     margin-top: 72px; */
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #222325 !important;
+    font-weight: 700;
+    margin: 0px 33px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	background-color: #E9ECF1 !important;
+	color: #0041CC !important;
+}
+/* 
+.navbar-nav {
+float: none;
+text-align: center;
+}
+
+.navbar-nav li {
+float: none;
+display: inline-block; 
+
+}*/
+
+
+
+
+/* .centered {
+	text-align: center;
+}
+
+a {
+	color: red;
+}
+
+a:hover, a:focus {
+	color: green;
+	text-decoration: none;
+	outline: 0;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;	
+}
+
+.navbar {
+	font-weight: 800;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.navbar-inverse {
+	background: #2d2d2d;
+	background-color: #2d2d2d;
+}
+*/
+section h1 {
+	text-align: center;
+} 
+
+.button-block {
+	margin-top: 60px;
+}
+
+.button-block .btn {
+	border-radius: 1px;
+	margin: 30px 10px;
+	padding: 12px 20px;
+}
+
+/* Inputs */
+
+.inputs-block {
+	margin-top: 45px;
+}
+
+.block-inputs {
+	margin: 30px;
+}
+
+
+
+/*Toggle Switch*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F4999E;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #35BF48;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/*Star rating*/
+
+.rating-block {
+	margin-top: 30px;
+	margin-bottom: 85px;
+	text-align: center !important;
+
+}
+
+.rating-block span{
+	font-size: 16px;
+	padding: 15px;	
+
+}
+
+.rating {
+    float:left;
+    text-align: center;
+
+
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#FFFFFF;
+    /* text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5); */
+ 	text-shadow: #EC971F 1px 0px, #EC971F 1px 1px, #EC971F 0px 1px, #EC971F -1px 1px, #EC971F -1px 0px, #EC971F -1px -1px, #EC971F 0px -1px, #EC971F 1px -1px;
+
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #EEAA00;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+/* Slider Carousel */
+
+.carousel .slid-for{
+	margin-top: 40px;
+	margin-left: 250px;
+	position: relative;
+	display: block;
+}
+
+.slid-nav img {
+	border-radius: 50%;
+	width: 80px;
+
+}
+
+.slid-nav {
+	margin-top: 25px;
+
+}
+
+.slid-for img {
+	border-radius: 50%;
+	width: 260px;
+	float: left;
+	margin-right: 75px;
+}
+
+ .slick-dots {
+	display: none !important;
+} 
+
+.slick-prev, .slick-next {
+	background-color: #0049B0 !important;  
+	top: -180% !important;
+	border: 1px solid black !important;
+	width: 30px;
+	height: 30px;
+}
+
+/* .slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+ */
+.slick-prev {
+	margin-left: 170px;
+}
+
+.slick-next {
+	margin-right: 170px;
+}
+
+.slider-text {
+	margin-top: 50px;
+	line-height: 25px;
+	letter-spacing: 0.5px;
+
+}
+
+
+/* Map */
+
+#map {
+	margin-top: 75px;
+	margin-bottom: 105px;
+	width: 100%;
+	height: 450px;
+}
+
+
+/*  Footer  */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+ /*   Margin bottom by footer height */
+  margin-bottom: 60px;
+} 
+.footer {
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  line-height: 40px;
+}
+
+.footer h5 {
+	color: #0049B0;
+	font-weight: bold;
+}
+
+.footer i {
+	color: #FFFFFF;
+	background-color: #202020;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 3px;
+
+}
+
+.footer a i:hover {
+	background-color: #0049B0;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #202020;
+}
+
+.footer a:hover {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
